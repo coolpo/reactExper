@@ -6,7 +6,7 @@
 ## 第一步：建仓并初始化你的配置单
 ```
  mkdir reactExper && cd reactExper  // 新建文件夹并进入新建文件夹 就是你的‘仓库’
- npm init // 初始化配置单 package.json 文件 
+ npm init // 初始化配置单 package.json 文件
 ```
 **tips:这些操作的前置条件是你已经安装了node。(好吧，我默认你是安装的。Good luck!)**
 ## 第二步：准备webpack、webpack配置文件、入口文件，
@@ -60,3 +60,6 @@
 
 </html>
 ```
+
+### 未完待续
+> 这次先到这里，找时间回来接着更新
