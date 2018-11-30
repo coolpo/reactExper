@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route } from "react-router";
+import { HashRouter, Switch, Route, Link } from "react-router-dom";
 
 import Statepage from "./views/stapage";
 import Propage from './views/propage';
-import Mypromise from './views/propage';
+import Mypromise from './views/mypromise';
 
 ReactDOM.render((
-  <Router>
-    <Route path="/" component={Propage}>
-      <Route path="statepage" component={Statepage} />
-      <Route path="mypromise" component={Mypromise} />
-    </Route>
-  </Router>
+  <HashRouter>
+    <div>
+      <Switch>
+        <Route exact path="/" component={Propage}></Route>
+        <Route path="/statepage" component={Statepage} />
+        <Route path="/mypromise" component={Mypromise} />
+      </Switch>
+    </div>
+
+
+  </HashRouter>
 ), document.getElementById('app'));

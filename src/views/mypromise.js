@@ -6,7 +6,7 @@ export default class Mypromise extends Component {
   }
   render() {
     return (
-      <div>动手撸一个Promise呀！</div>
+      <div>动手撸一个Promise呀！------------</div>
     )
   }
 }

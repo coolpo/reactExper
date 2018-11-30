@@ -1,7 +1,5 @@
-import React, {
-  Component
-} from 'react';
-
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 export default class Propage extends Component {
   // 构造函数
   constructor(props) {
@@ -32,7 +30,9 @@ export default class Propage extends Component {
     return (
       <div>
         <div>就是要实现个表：{this.state.nowTime.toLocaleDateString()}</div>
-        
+        <div>
+          <Link to='/mypromise'>手动实现一个Pormise</Link>
+        </div>
       </div>
     )
   }
